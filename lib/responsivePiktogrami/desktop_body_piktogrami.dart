@@ -1,0 +1,156 @@
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import '../classes/language_constants.dart';
+
+class MyDesktopBodyPiktogrami extends StatelessWidget {
+  const MyDesktopBodyPiktogrami({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.red[50],
+      body: Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                padding: const EdgeInsets.all(8.0),
+                width: 700,
+                height: 600,
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.redAccent.shade700,
+                    width: 1.5,
+                  ),
+                  shape: BoxShape.rectangle,
+                  borderRadius: BorderRadius.circular(20.0),
+                  color: Colors.redAccent[100],
+                ),
+                child: Container(
+                  height: 500,
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.white,
+                      width: 1.5,
+                    ),
+                    shape: BoxShape.rectangle,
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                        left: 20, top: 20, right: 20, bottom: 20),
+                    child: ListView(
+                      children: <Widget>[
+                        Text(
+                          translation(context).piktogrami,
+                          style: GoogleFonts.comicNeue(
+                            color: Colors.white,
+                            fontStyle: FontStyle.normal,
+                            fontSize: 20,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                padding: const EdgeInsets.all(8.0),
+                width: 500,
+                height: 600,
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.red.shade900,
+                    width: 1.5,
+                  ),
+                  shape: BoxShape.rectangle,
+                  borderRadius: BorderRadius.circular(20.0),
+                  color: Colors.redAccent[100],
+                ),
+                child: ListView(
+                  children: const <Widget>[
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+                      child: Image(
+                        image: AssetImage("images/piktoa.png"),
+                        width: 500,
+                        height: 250,
+                        fit: BoxFit.fill,
+                        filterQuality: FilterQuality.high,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+                      child: Image(
+                        image: AssetImage("images/piktob.png"),
+                        width: 500,
+                        height: 250,
+                        fit: BoxFit.fill,
+                        filterQuality: FilterQuality.high,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+                      child: Image(
+                        image: AssetImage("images/piktoc.png"),
+                        width: 500,
+                        height: 250,
+                        fit: BoxFit.fill,
+                        filterQuality: FilterQuality.high,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+                      child: Image(
+                        image: AssetImage("images/piktod.png"),
+                        width: 500,
+                        height: 250,
+                        fit: BoxFit.fill,
+                        filterQuality: FilterQuality.high,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+                      child: Image(
+                        image: AssetImage("images/piktoe.png"),
+                        width: 500,
+                        height: 250,
+                        fit: BoxFit.fill,
+                        filterQuality: FilterQuality.high,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+                      child: Image(
+                        image: AssetImage("images/piktof.png"),
+                        width: 500,
+                        height: 250,
+                        fit: BoxFit.fill,
+                        filterQuality: FilterQuality.high,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+                      child: Image(
+                        image: AssetImage("images/piktog.png"),
+                        width: 500,
+                        height: 250,
+                        fit: BoxFit.fill,
+                        filterQuality: FilterQuality.high,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
